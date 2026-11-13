@@ -11,7 +11,7 @@
         "id": "18c6eac3a8fb4a12",
         "type": "inject",
         "z": "cde4eb63bf46278f",
-        "name": "",
+        "name": "Mensaje Remoto",
         "props": [
             {
                 "p": "payload"
@@ -25,10 +25,10 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "hola mundo",
-        "payload": "",
-        "payloadType": "date",
-        "x": 450,
+        "topic": "UTMACH - Prueba Pull",
+        "payload": "¡Cambio descargado desde GitHub mediante Pull exitoso!",
+        "payloadType": "str",
+        "x": 360,
         "y": 280,
         "wires": [
             [
@@ -40,16 +40,27 @@
         "id": "eb6259c5ad3911ed",
         "type": "debug",
         "z": "cde4eb63bf46278f",
-        "name": "debug 1",
+        "name": "Consola de salida",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
-        "y": 260,
+        "x": 630,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9b12a3f5.c4d5e6",
+        "type": "comment",
+        "z": "cde4eb63bf46278f",
+        "name": "Simulación: Este comentario y los cambios en el Inject llegaron al hacer PULL",
+        "info": "",
+        "x": 390,
+        "y": 220,
         "wires": []
     }
 ]
